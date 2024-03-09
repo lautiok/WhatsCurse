@@ -1,0 +1,48 @@
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    color: #333333;
+    text-align: center;
+}
+
+.container form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+}
+
+.container form input[type="text"],
+.container form input[type="email"],
+.container form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.container form textarea {
+    resize: vertical;
+}
+
+.container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #EAAB02;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container form button:hover {
+    background-color: #d18e00;
+}

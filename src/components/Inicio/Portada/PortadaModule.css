@@ -1,0 +1,41 @@
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/imagenes/portada.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero__container img {
+    width: 200px;
+    height: 200px;
+}
+
+.hero__container h1 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 1728px) {
+    .hero {
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+
+    }
+
+}

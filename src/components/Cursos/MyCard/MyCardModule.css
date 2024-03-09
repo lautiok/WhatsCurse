@@ -1,0 +1,126 @@
+/* Estilos para el contenedor de cursos */
+.cursos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.cursos {
+    max-width: 960px;
+    /* Ancho máximo del contenedor */
+    margin: 0 auto;
+    margin-top: 1rem;
+    /* Centrar el contenedor en la página */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* Distribuir el espacio entre las tarjetas */
+}
+
+/* Estilos para cada tarjeta */
+.card {
+    width: calc(33.33% - 20px);
+    /* 33.33% menos el margen para que quepan tres tarjetas por fila */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos para la imagen dentro de la tarjeta */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Estilos para el título dentro de la tarjeta */
+.card h3 {
+    margin-top: 10px;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilos para el enlace "Más información" dentro de la tarjeta */
+.card a {
+    margin-top: auto;
+    text-decoration: none;
+    background-color: #EAAB02;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para el enlace cuando se pasa el cursor por encima */
+.card a:hover {
+    background-color: #EAAB02;
+}
+
+/* Estilos para los botones de categoría */
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0.5rem;
+    border-radius: 30px;
+    background-color: #EAAB02;
+    /* Agrega un margen en la parte inferior */
+}
+
+.categorias button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #EAAB02;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.categorias button:hover {
+    background-color: #eaac02b9;
+}
+
+
+
+@media screen and (max-width: 428px) {
+    .cursos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .card {
+        width: 70%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .categorias {
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width: 894px) {
+    .cursos {
+        margin: 1rem;
+    }
+
+}
